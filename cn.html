@@ -28,6 +28,26 @@
 
         <!-- Google Fonts -->
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900,100italic,300italic,400italic,700italic,900italic" />
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+        <!-- Facebook Pixel Code -->
+        <script>
+        !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+        n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+        n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+        t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+        document,'script','https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '1870105369936877'); // Insert your pixel ID here.
+        fbq('track', 'PageView');
+        </script>
+        <noscript><img height="1" width="1" style="display:none"
+        src="https://www.facebook.com/tr?id=1870105369936877&ev=PageView&noscript=1"
+        /></noscript>
+        <!-- DO NOT MODIFY -->
+        <!-- End Facebook Pixel Code -->
     </head>
 
     <body data-spy="scroll" data-target="#navbar-scroll">
@@ -321,7 +341,7 @@
                                     <input type="hidden" name="u" value="f20eaf1b49f80464d2be01981">
                                     <input type="hidden" name="id" value="df3f71e5dd">
                                     <input class="form-control" type="email" name="MERGE0" placeholder="電子郵件" required="">
-                                    <button type="submit" class="subscribe-btn btn">追蹤</button>
+                                    <button type="submit" class="subscribe-btn btn" id="sub-button">追蹤</button>
                                 </form>
                                 <p style="font-weight:bolder;">**我們跟你一樣討厭垃圾郵件，所以我們答應不會亂發郵件。</p>
                             </div>   
@@ -448,6 +468,13 @@
         </script>
         <script>
             new WOW().init();
+        </script>
+
+        <!-- Facebook Pixel Code -->
+        <script type="text/javascript">
+            $( '#sub-button' ).click(function() {
+                fbq('track', 'Lead');
+            });
         </script>
     </body>
 </html>

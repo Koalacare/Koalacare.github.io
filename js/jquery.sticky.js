@@ -39,7 +39,7 @@
           if (s.currentTop !== null) {
             s.stickyElement
               .css('width', '')
-              .css('position', '')
+              .css('position', 'relative')
               .css('top', '');
             s.stickyElement.trigger('sticky-end', [s]).parent().removeClass(s.className);
             s.currentTop = null;

@@ -469,7 +469,7 @@
 
         <!-- Facebook Pixel Code -->
         <script type="text/javascript">
-            $( '#sub-button' ).click(function() {
+            $( '#sub-button' ).one('click', function() {
                 fbq('track', 'Lead');
             });
         </script>

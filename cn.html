@@ -79,7 +79,7 @@
                             <!-- /.header button -->
                             <div class="head-btn wow fadeInLeft">
                                 <a href="#feature" class="btn-primary">特徵</a>
-                                <a href="#subscribe" class="btn-default">追蹤</a>
+                                <a href="#subscribe" class="btn-default" id="more-btn">追蹤</a>
                             </div>
 
                             <!-- /.phone option 
@@ -474,6 +474,11 @@
         <script type="text/javascript">
             $( '#sub-button' ).one("click", function() {
                 fbq('track', 'Lead');
+            });
+        </script>
+        <script type="text/javascript">
+            $( '#more-btn' ).one("click", function() {
+                fbq('track', 'AddToWishlist');
             });
         </script>
     </body>

@@ -82,7 +82,7 @@
                             <!-- /.header button -->
                             <div class="head-btn wow fadeInLeft">
                                 <a href="#feature" class="btn-primary">Features</a>
-                                <a href="#subscribe" class="btn-default h-btn">Subscribe</a>
+                                <a href="#subscribe" class="btn-default h-btn" id="more-btn">Subscribe</a>
                             </div>
 
                             <!-- /.phone option 
@@ -471,6 +471,11 @@
         <script type="text/javascript">
             $( '#sub-button' ).one('click', function() {
                 fbq('track', 'Lead');
+            });
+        </script>
+        <script type="text/javascript">
+            $( '#more-btn' ).one("click", function() {
+                fbq('track', 'AddToWishlist');
             });
         </script>
 

@@ -81,8 +81,8 @@
 
                             <!-- /.header button -->
                             <div class="head-btn wow fadeInLeft">
-                                <a href="#feature" class="btn-primary">Features</a>
-                                <a href="#subscribe" class="btn-default more-btn">Subscribe</a>
+                                <a href="#feature" class="btn-default">Features</a>
+                                <a href="#subscribe" class="btn-primary more-btn">Subscribe</a>
                             </div>
 
                             <!-- /.phone option 
@@ -488,7 +488,7 @@
             html: '<div id="popup-content" class="col-sm-10 col-sm-offset-1 text-center"><h3>Leaving so soon?</h3>If you are concerned about night-time low blood sugar, let us know by clicking the button below.<br/><button class="btn-default more-btn" id="bio-btn" style="font-weight:bolder;">Show Interest</button><br/>*this will not ask for any further details</br></div>',
             cookieExp: 0,
             delay: 2, 
-            showOncePerSession: false,
+            showOncePerSession: true,
             onPopup: function(){
                 document.getElementById('bio-btn').addEventListener('click', function(){
                     $('#bio-btn').removeClass('btn-default');

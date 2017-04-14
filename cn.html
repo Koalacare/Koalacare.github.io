@@ -78,8 +78,8 @@
 
                             <!-- /.header button -->
                             <div class="head-btn wow fadeInLeft">
-                                <a href="#feature" class="btn-primary">特徵</a>
-                                <a href="#subscribe" class="btn-default" id="more-btn">追蹤</a>
+                                <a href="#feature" class="btn-default">特徵</a>
+                                <a href="#subscribe" class="btn-primary more-btn" >註冊</a>
                             </div>
 
                             <!-- /.phone option 
@@ -333,7 +333,7 @@
                             <i class="pe-7s-mail pe-va letter wow fadeInUp"></i>
                         </div>
                         <div class="col-md-8 col-md-offset-2 text-center">
-                            <p>如有興趣可留下電子郵件追蹤我們最新消息</p>
+                            <p>現在註冊可享特別優惠</p>
 
                             <!-- /.subscribe form -->
                             <div class="subscribe-form wow fadeInUp">
@@ -341,7 +341,7 @@
                                     <input type="hidden" name="u" value="f20eaf1b49f80464d2be01981">
                                     <input type="hidden" name="id" value="df3f71e5dd">
                                     <input class="form-control" type="email" name="MERGE0" placeholder="電子郵件" required="">
-                                    <button type="submit" class="subscribe-btn btn" id="sub-button">追蹤</button>
+                                    <button type="submit" class="subscribe-btn btn" id="sub-button">註冊</button>
                                 </form>
                                 <p style="font-weight:bolder;">**我們跟你一樣討厭垃圾郵件，所以我們答應不會亂發郵件。</p>
                             </div>   
@@ -477,9 +477,34 @@
             });
         </script>
         <script type="text/javascript">
-            $( '#more-btn' ).one("click", function() {
+            $( '.more-btn' ).one("click", function() {
                 fbq('track', 'AddToWishlist');
             });
+        </script>
+
+        <!-- Exit Popup Code -->
+        <script type="text/javascript" src="js/bioep.min.js"></script>
+        <script type="text/javascript">
+          bioEp.init({
+            width: 420,
+            height: 300,
+            html: '<div id="popup-content" class="col-sm-10 col-sm-offset-1 text-center"><h3>離開前，回答我們一個簡單問題吧。</h3>你是否糖尿病患者？<br/><button class="btn-default more-btn" id="bio-btn" style="font-weight:bolder;">是</button><button class="btn-default more-btn" id="bio-btn2" style="font-weight:bolder;">否</button><br/></div>',
+            cookieExp: 0,
+            delay: 2, 
+            showOncePerSession: true,
+            onPopup: function(){
+                document.getElementById('bio-btn').addEventListener('click', function(){
+                    $('#bio-btn').removeClass('btn-default');
+                    $('#bio-btn').addClass('btn-default2');
+                    
+                });
+                document.getElementById('bio-btn2').addEventListener('click', function(){
+                    $('#bio-btn').removeClass('btn-default');
+                    $('#bio-btn').addClass('btn-default2');
+                    
+                });
+            }
+          });
         </script>
     </body>
 </html>

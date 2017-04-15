@@ -42,6 +42,12 @@ a {
 	-webkit-transition: all .8s ease;
 	transition: all .8s ease;
 } 
+
+#em-label{
+	color:#fff;
+	font-family: "Lato", "Serif";
+	font-size: 18px;
+}
 a:hover {
 	text-decoration: none;
 	color: #1f2222;
@@ -342,6 +348,15 @@ a:hover {
 }
 .subscribe-form .btn {
 	height: 55px;
+}
+.btn-s{
+	
+}
+.btn-s:hover{
+	background-color: #000;
+	color: #fff;
+	-webkit-transition: all .8s ease;
+	transition: all .8s ease;
 }
 .subscribe-form .btn:hover {
 	background-color: #1f96e0;

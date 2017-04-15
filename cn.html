@@ -334,6 +334,7 @@
                         </div>
                         <div class="col-md-8 col-md-offset-2 text-center">
                             <p>現在註冊可享特別優惠</p>
+                            <p>想知更多信息，可發電郵到： <a href="mailto:koalacare@zoho.com">koalacare@zoho.com</a></p>
 
                             <!-- /.subscribe form -->
                             <div class="subscribe-form wow fadeInUp">
@@ -432,6 +433,21 @@
             </div>
         </div> -->
 
+        <div class="col-sm-12 hidden-xs" id="bottom-bar" style="position:fixed; bottom:0; left: 0; background:#3eb0f7; display:none;">
+            <div class="container">
+                
+                <div class="col-sm-7 col-sm-offset-3" style="margin-top:1%; margin-bottom:1%;">
+                    <form class="news-letter mailchimp form-inline" action="https://github.us15.list-manage.com/subscribe/post" role="form" method="POST">
+                        <input type="hidden" name="u" value="f20eaf1b49f80464d2be01981">
+                        <input type="hidden" name="id" value="df3f71e5dd">
+                        <label for="email" id="em-label">現在註冊可享特別優惠 </label>
+                        <input class="form-control" type="email" name="MERGE0" placeholder="Your email..." required="">
+                        <button type="submit" class="subscribe-btn btn btn-s" id="sub-button">註冊</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
         <!-- /.footer -->
         <footer id="footer">
             <div class="container">
@@ -472,7 +488,7 @@
 
         <!-- Facebook Pixel Code -->
         <script type="text/javascript">
-            $( '#sub-button' ).one("click", function() {
+            $( '.subscribe-button' ).one("click", function() {
                 fbq('track', 'Lead');
             });
         </script>
